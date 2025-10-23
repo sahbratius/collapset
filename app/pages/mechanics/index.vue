@@ -3,7 +3,7 @@
         <UPageColumns>
             <UBlogPost title="Класи"
                 description="Ми відрізняємося від всіх українських майнкарфт політичних серверів тим, що ви можете вибрати клас і його прокачувати! Натисніть щоб більше про них дізнатися"
-                image="/images/mechanics/klas-voyin.png" to="/mechanics/fractions" />
+                image="/images/mechanics/klas-voyin.png" to="/mechanics/class" />
             <UBlogPost title="Фракції"
                 description="На нашому сервері замість Towny ми використовуємо свій плагін на фракції! Щоб дізнатися як ним користуватися, натисніть тут."
                 image="/images/mechanics/fractions.png" to="/mechanics/fractions" />
