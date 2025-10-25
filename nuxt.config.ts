@@ -21,6 +21,10 @@ export default defineNuxtConfig({
       htmlAttrs: { lang: "uk" },
       meta: [
         {
+          name: "google-site-verification",
+          content: "_4zxC7OKzbEBNuU1G3Qau5iIWorwJxbvepeVa7Qz0IM",
+        },
+        {
           name: "description",
           content:
             "Вітаємо! Це офіційний сайт українського сервера майнкрафт Collapset. Наша мета — стати найкращим сервером в Україні!",
@@ -33,6 +37,12 @@ export default defineNuxtConfig({
       link: [
         { rel: "canonical", href: BASE_URL },
         { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+        { rel: "preconnect", href: "https://fonts.googleapis.com" },
+        {
+          rel: "preconnect",
+          href: "https://fonts.gstatic.com",
+          crossorigin: "",
+        },
       ],
     },
     // @ts-ignore
@@ -58,12 +68,11 @@ export default defineNuxtConfig({
     allow: ["/"],
   },
   modules: [
-    // "@nuxt/image",
-    "@nuxt/ui",
-    "@nuxtjs/mdc", // "nuxt-twemoji"
-    "nuxt-simple-sitemap",
-    "nuxt-simple-robots",
-    "nuxt-gtag",
+    //  "@nuxt/image",
+    "@nuxt/ui", // "nuxt-twemoji"
+    "@nuxtjs/mdc",
+    "@nuxtjs/robots",
+    "@nuxtjs/sitemap",
   ],
   css: ["./app/assets/styles.css"],
   build: {

@@ -12,9 +12,9 @@
 
   <UPageSection title="Найкращі скріншоти та карикатури 🖼️">
     <UBlogPosts>
-      <UBlogPost title="Потужний: Ахіреть я в ньому жити можу" image="/images/memes/image-2.png" />
-      <UBlogPost title="Два різних світа" image="./images/memes/image12.png" />
-      <UBlogPost title="Гора за 3 дня" image="./images/memes/pot.png" />
+      <UBlogPost title="Потужний: Ахіреть я в ньому жити можу" image="/images/memes/1.png" />
+      <UBlogPost title="Два різних світа" image="/images/memes/2.png" />
+      <UBlogPost title="Гора за 3 дня" image="/images/memes/3.png" />
     </UBlogPosts>
   </UPageSection>
 
