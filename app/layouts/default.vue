@@ -6,10 +6,10 @@ import { Analytics } from '@vercel/analytics/nuxt'
 
 <template>
   <UApp :locale="uk">
-    <UBanner id="second wipe" title="II вайп буде 25 жовтня о 19:00 за київським часом!" close />
     <Header />
     <UMain>
       <UContainer>
+        <NuxtLoadingIndicator color="#ea580c" />
         <slot />
         <SpeedInsights />
         <Analytics />
