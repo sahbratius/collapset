@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { uk } from '@nuxt/ui/locale'
-import { SpeedInsights } from '@vercel/speed-insights/next';
+import { SpeedInsights } from '@vercel/speed-insights/nuxt';
 </script>
 
 <template>
