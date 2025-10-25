@@ -1,21 +1,27 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-const BASE_URL = "http://localhost:3000";
+const BASE_URL = "https://collapset.vercel.app";
 
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
   ssr: true,
-  nitro: { preset: "static" },
+  nitro: {
+    preset: "static",
+    compressPublicAssets: true,
+    routeRules: {
+      "/**": { swr: 60 },
+    },
+  },
 
   app: {
     head: {
-      title: "Collapset | Український, політичний майнкрафт сервер",
+      title: "Collapset | Головна сторінка",
       htmlAttrs: { lang: "uk" },
       meta: [
         {
           name: "description",
           content:
-            "Вітаємо! Це офіційний сайт українського сервера майнкрафт Collapset. Наша мета — стати найкращим сервером в Україні!", // Опис що буде показуватися гуглу
+            "Вітаємо! Це офіційний сайт українського сервера майнкрафт Collapset. Наша мета — стати найкращим сервером в Україні!",
         },
         { property: "og:site_name", content: "Collapset" },
         { name: "twitter:card", content: "summary_large_image" },
@@ -23,7 +29,7 @@ export default defineNuxtConfig({
         { name: "theme-color", content: "#ea580c" },
       ],
       link: [
-        // { rel: "canonical", href: "https://ваша-доменна-адреса.com/" },
+        { rel: "canonical", href: BASE_URL },
         { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
       ],
     },
@@ -32,7 +38,18 @@ export default defineNuxtConfig({
       class: "select-none",
     },
   },
-  sitemap: { url: BASE_URL },
+  sitemap: {
+    // @ts-ignore
+    hostname: BASE_URL,
+    routes: [
+      "/rules",
+      "/donate",
+      "/mechanics",
+      "/mechanics/class",
+      "/mechanics/fractions",
+      "/event/1",
+    ],
+  },
   robots: {
     sitemap: [`${BASE_URL}/sitemap.xml`],
     // disallow: ['/'],
@@ -41,16 +58,16 @@ export default defineNuxtConfig({
   modules: [
     // "@nuxt/image",
     "@nuxt/ui",
-    "@nuxtjs/mdc",
-    // "nuxt-twemoji"
+    "@nuxtjs/mdc", // "nuxt-twemoji"
     "nuxt-simple-sitemap",
     "nuxt-simple-robots",
+    "nuxt-gtag",
   ],
   css: ["./app/assets/styles.css"],
-  vite: {
-    build: {
-      minify: "esbuild",
-      cssCodeSplit: false,
-    },
+  build: {
+    // @ts-ignore
+    extractCSS: true,
+    splitChunks: { layouts: true, pages: true, commons: true },
+    terser: { compress: true, mangle: true },
   },
 });

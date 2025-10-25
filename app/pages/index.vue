@@ -27,10 +27,10 @@
     </UBlogPosts>
   </UPageSection>
 
-  <USeparator />
+  <!-- <USeparator />
 
   <UPageSection title="Q&A"
     description="Тут написані запитання, які часто задають гравці і на них ви можете подивитися відповідь">
 
-  </UPageSection>
+  </UPageSection> -->
 </template>

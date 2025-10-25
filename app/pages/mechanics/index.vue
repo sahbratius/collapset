@@ -17,15 +17,4 @@
                 to="https://github.com/DieReicheErethons/Brewery/wiki/Использование" target="_blank" />
         </UPageColumns>
     </UPageSection>
-
-    <!-- <h3>Основні механіки сервера:</h3>
-    <div class="card"><strong>Класи</strong>
-        <p>Класи це уникум проекта. Вибір через /klas, зміна за 15 золота.</p>
-        <img src="../assets/vib.png">
-        <p> Прокачка класу здійснюється через гілки — /gilka. Вкачка через ресурси (часто золота руда).</p>
-        <div class="images-row">
-            <img src="../assets/al.png">
-            <img src="../assets/vo.png">
-        </div>
-    </div> -->
 </template>
