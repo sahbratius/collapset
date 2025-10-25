@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { uk } from '@nuxt/ui/locale'
+import { SpeedInsights } from '@vercel/speed-insights/next';
 </script>
 
 <template>
@@ -9,6 +10,7 @@ import { uk } from '@nuxt/ui/locale'
     <UMain>
       <UContainer>
         <slot />
+        <SpeedInsights/>
       </UContainer>
     </UMain>
     <USeparator />
