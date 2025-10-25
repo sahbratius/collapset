@@ -7,7 +7,7 @@ export default defineNuxtConfig({
   ssr: true,
   nitro: {
     preset: "static",
-    compressPublicAssets: true,
+    compressPublicAssets: false,
     routeRules: {
       "/**": { swr: 60 },
     },
