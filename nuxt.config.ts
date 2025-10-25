@@ -7,7 +7,7 @@ export default defineNuxtConfig({
   ssr: true,
   nitro: {
     preset: "static",
-    compressPublicAssets: false,
+    compressPublicAssets: true,
     routeRules: {
       "/**": { swr: 60 },
     },
@@ -67,9 +67,12 @@ export default defineNuxtConfig({
     // disallow: ['/'],
     allow: ["/"],
   },
-  modules: [// "nuxt-twemoji"
-    "@nuxt/ui", "@nuxtjs/mdc", "@nuxtjs/robots", "@nuxtjs/sitemap",
-    //"@nuxt/image"
+  modules: [
+    //  "@nuxt/image",
+    "@nuxt/ui", // "nuxt-twemoji"
+    "@nuxtjs/mdc",
+    "@nuxtjs/robots",
+    "@nuxtjs/sitemap",
   ],
   css: ["./app/assets/styles.css"],
   build: {
