@@ -12,7 +12,9 @@ export default defineNuxtConfig({
       "/**": { swr: 60 },
     },
   },
-
+  experimental: {
+    appManifest: false,
+  },
   app: {
     head: {
       title: "Collapset | Головна сторінка",
