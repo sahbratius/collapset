@@ -1,5 +1,5 @@
 <template>
-  <UPageSection title="Донат 💰" description="Через донат ви можете розблокувати команди">
+  <UPageSection title="Донат 💰" description="Через донат ви можете розблокувати команди.Донати видаються лише на один вайп.">
     <UPricingTable :tiers="tiers" :sections="section" />
   </UPageSection>
   <!-- <div id=" paymentModal" class="modal">
@@ -110,6 +110,10 @@ const section = ref([
       },
       {
         title: '/ffly - політ в фракції',
+        tiers: { regent: true, imperator: true, }
+      },
+      {
+        title: 'Дозвіл на те, щоб сховатися',
         tiers: { regent: true, imperator: true, }
       },
       {

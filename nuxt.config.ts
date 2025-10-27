@@ -68,7 +68,7 @@ export default defineNuxtConfig({
     allow: ["/"],
   },
   modules: [
-    //  "@nuxt/image",
+    "@nuxt/image",
     "@nuxt/ui", // "nuxt-twemoji"
     "@nuxtjs/mdc",
     "@nuxtjs/robots",
