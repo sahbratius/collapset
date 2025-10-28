@@ -12,7 +12,7 @@
     </template>
 
     <template #right>
-      <UColorModeButton />
+      <!-- <UColorModeButton /> -->
       <ToolTips />
     </template>
   </UHeader>

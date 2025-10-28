@@ -6,10 +6,10 @@ import { Analytics } from '@vercel/analytics/nuxt'
 
 <template>
   <UApp :locale="uk">
+    <Loader />
     <Header />
     <UMain>
       <UContainer>
-        <NuxtLoadingIndicator color="#ea580c" />
         <slot />
         <SpeedInsights />
         <Analytics />

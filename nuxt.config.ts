@@ -68,7 +68,7 @@ export default defineNuxtConfig({
     allow: ["/"],
   },
   modules: [
-    "@nuxt/image",
+    //"@nuxt/image",
     "@nuxt/ui", // "nuxt-twemoji"
     "@nuxtjs/mdc",
     "@nuxtjs/robots",
@@ -78,7 +78,7 @@ export default defineNuxtConfig({
   build: {
     // @ts-ignore
     extractCSS: true,
-    splitChunks: { layouts: true, pages: true, commons: true },
+    // splitChunks: { layouts: true, pages: true, commons: true },
     terser: { compress: true, mangle: true },
   },
 });
