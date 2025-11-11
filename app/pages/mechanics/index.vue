@@ -3,21 +3,21 @@
         <UPageColumns>
             <UBlogPost title="Класи"
                 description="Ми відрізняємося від всіх українських майнкарфт політичних серверів тим, що ви можете вибрати клас і його прокачувати! Натисніть щоб більше про них дізнатися"
-                image="/_nuxt/assets/images/mechanics/klas-voyin.png" to="/mechanics/class" />
+                image="/images/mechanics/klas-voyin.png" to="/mechanics/class" />
             <UBlogPost title="Фракції"
                 description="На нашому сервері замість Towny ми використовуємо свій плагін на фракції! Щоб дізнатися як ним користуватися, натисніть тут."
-                image="/_nuxt/assets/images/mechanics/fractions.png" to="/mechanics/fractions" />
+                image="/images/mechanics/fractions.png" to="/mechanics/fractions" />
             <UBlogPost title="Діжки замість шалкерів"
                 description="Ми вирішили що діжки будуть функціонувати так само як шалкери. Вам не доведеться іти в Енд!"
-                image="/_nuxt/assets/images/mechanics/barrel.jpg" />
+                image="/images/mechanics/barrel.jpg" />
             <UBlogPost title="Команда /sit" description="Тепер ви можете сісти!"
-                image="/_nuxt/assets/images/mechanics/sit.jpeg" />
+                image="/images/mechanics/sit.jpeg" />
             <UBlogPost title="Плагін Brewery"
                 description="Ви можете варити свої улюблені напої завдяки чудовому плагіну «Brewery»! При кліку, вас перекине на інструкцію використання того плагіна"
-                image="/_nuxt/assets/images/mechanics/brewery.webp"
+                image="/images/mechanics/brewery.webp"
                 to="https://github.com/DieReicheErethons/Brewery/wiki/Использование" target="_blank" />
             <UBlogPost title="Кастомні крафти" description="Також ми маємо кастомні крафти!"
-                image="/_nuxt/assets/images/mechanics/crafts.webp" to="/mechanics/crafts" />
+                image="/images/mechanics/crafts.webp" to="/mechanics/crafts" />
         </UPageColumns>
     </UPageSection>
 </template>
