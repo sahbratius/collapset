@@ -8,9 +8,6 @@ export default defineNuxtConfig({
   nitro: {
     preset: "static",
     compressPublicAssets: false,
-    routeRules: {
-      "/**": { swr: 60 },
-    },
   },
   experimental: {
     appManifest: false,
@@ -68,7 +65,7 @@ export default defineNuxtConfig({
     allow: ["/"],
   },
   modules: [
-    //"@nuxt/image",
+   // "@nuxt/image",
     "@nuxt/ui", // "nuxt-twemoji"
     "@nuxtjs/mdc",
     "@nuxtjs/robots",
