@@ -21,3 +21,17 @@
         </UPageColumns>
     </UPageSection>
 </template>
+<script>
+import { useHead } from 'nuxt/app';
+
+useHead({
+   title: "Collapset | Механіки",
+   meta: [
+      { name: "description", content: "Тут ви дізнаєтеся всі механіки, які наш сервер має на даний момент. Дізнайтеся їх тут!" },
+      { property: "og:title", content: "Collapset | Механіки" },
+      { property: "og:description", content: "Тут ви дізнаєтеся всі механіки, які наш сервер має на даний момент. Дізнайтеся їх тут!" },
+      { property: "og:url", content: "https://collapset.vercel.app/mechanics" },
+      { property: "og:type", content: "website" },
+   ],
+})
+</script>
