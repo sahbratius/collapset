@@ -1,5 +1,5 @@
 <template>
-  <UPageSection title="Донат 💰" description="Через донат ви можете розблокувати команди.Донати видаються лише на один вайп.">
+  <UPageSection title="Донат 💰" description="Через донат ви можете розблокувати команди. Донати видаються лише на один вайп.">
     <UPricingTable :tiers="tiers" :sections="section" />
   </UPageSection>
   <!-- <div id=" paymentModal" class="modal">
@@ -14,6 +14,25 @@
       </div> -->
 </template>
 <script setup lang="ts">
+<template>
+   <UPageSection title="Правила нашого чудового серверу 📜">
+      <MDC :value="value" />
+   </UPageSection>
+</template>
+<script setup lang="ts">
+import { useHead } from 'nuxt/app';
+
+useHead({
+   title: "Collapset | Донат",
+   meta: [
+      { name: "description", content: "Якщо ви хочете мати доступ до ще більше можливостей, на нашому політичному сервері, то натисніть тут!" },
+      { property: "og:title", content: "Collapset | Донат" },
+      { property: "og:description", content: "Якщо ви хочете мати доступ до ще більше можливостей, на нашому політичному сервері, то натисніть тут!" },
+      { property: "og:url", content: "https://collapset.vercel.app/donate" },
+      { property: "og:type", content: "website" },
+   ],
+})
+  
 const tiers = ref([
   {
     id: 'voyin',
