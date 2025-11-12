@@ -14,12 +14,6 @@
       </div> -->
 </template>
 <script setup lang="ts">
-<template>
-   <UPageSection title="Правила нашого чудового серверу 📜">
-      <MDC :value="value" />
-   </UPageSection>
-</template>
-<script setup lang="ts">
 import { useHead } from 'nuxt/app';
 
 useHead({
