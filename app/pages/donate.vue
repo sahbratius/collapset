@@ -32,37 +32,37 @@ const tiers = ref([
     id: 'voyin',
     title: 'Воїн',
     price: '49₴',
-    button: { label: 'Купити' }
+    button: { label: 'Купити', onClick: () => console.log(67) }
   },
   {
     id: 'legioner',
     title: 'Легіонер',
     price: '99₴',
-    button: { label: 'Купити' }
+    button: { label: 'Купити', onClick: () => console.log(67) }
   },
   {
     id: 'landsknet',
     title: 'Ландскнехт',
     price: '149₴',
-    button: { label: 'Купити' }
+    button: { label: 'Купити', onClick: () => console.log(67) }
   },
   {
     id: 'diadoh',
     title: 'Діадох',
     price: '199₴',
-    button: { label: 'Купити' }
+    button: { label: 'Купити', onClick: () => console.log(67) }
   },
   {
     id: 'regent',
     title: 'Регент',
     price: '499₴',
-    button: { label: 'Купити' }
+    button: { label: 'Купити', onClick: () => console.log(67) }
   },
   {
     id: 'imperator',
     title: 'Імператор',
     price: '699₴',
-    button: { label: 'Купити' }
+    button: { label: 'Купити', onClick: () => console.log(67) }
   },
 ])
 const section = ref([
