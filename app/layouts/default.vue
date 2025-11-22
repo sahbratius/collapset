@@ -5,17 +5,19 @@ import { Analytics } from '@vercel/analytics/nuxt'
 </script>
 
 <template>
-  <UApp :locale="uk">
-    <Loader />
-    <Header />
-    <UMain>
-      <UContainer>
-        <slot />
-        <SpeedInsights />
-        <Analytics />
-      </UContainer>
-    </UMain>
-    <USeparator />
-    <Footer />
-  </UApp>
+  <ClientOnly>
+	  <UApp :locale="uk">
+		<Loader />
+		<Header />
+		<UMain>
+		  <UContainer>
+			<slot />
+			<SpeedInsights />
+			<Analytics />
+		  </UContainer>
+		</UMain>
+		<USeparator />
+		<Footer />
+	  </UApp>
+  </ClientOnly>
 </template>
