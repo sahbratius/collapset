@@ -4,7 +4,7 @@ const BASE_URL = "https://collapset.vercel.app";
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
-  ssr: true,
+  ssr: false,
   nitro: {
     preset: "static",
     compressPublicAssets: false,
