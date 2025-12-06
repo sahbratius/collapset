@@ -45,7 +45,7 @@ const items = computed<NavigationMenuItem[]>(() => [
   },
   {
     label: 'Мапа',
-    to: 'http://143.20.155.101:25790',
+    to: 'http://ger-01-p.leavehosting.com:29016/',
     external: true
   },
   {
