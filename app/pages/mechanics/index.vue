@@ -18,6 +18,8 @@
                 to="https://github.com/DieReicheErethons/Brewery/wiki/Использование" target="_blank" />
             <UBlogPost title="Кастомні крафти" description="Також ми маємо кастомні крафти!"
                 image="/images/mechanics/crafts.webp" to="/mechanics/crafts" />
+            <UBlogPost title="Тотеми" description="Тотемчикииииииииииииииииииииии"
+                image="/images/mechanics/totem.jpeg" to="/mechanics/totem" />
         </UPageColumns>
     </UPageSection>
 </template>
