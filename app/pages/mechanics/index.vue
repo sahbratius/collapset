@@ -1,6 +1,8 @@
 <template>
     <UPageSection title="Механіки нашого сервера ✨">
         <UPageColumns>
+            <UBlogPost title="Сила" description="В нас механіка сили. Натисніть щоб дізнатися про неї більше" image="/images/mechanics
+/maxresdefault.jpg" to="/mechanics/power" />
             <UBlogPost title="Класи"
                 description="Ми відрізняємося від всіх українських майнкарфт політичних серверів тим, що ви можете вибрати клас і його прокачувати! Натисніть щоб більше про них дізнатися"
                 image="/images/mechanics/klas-voyin.png" to="/mechanics/class" />
